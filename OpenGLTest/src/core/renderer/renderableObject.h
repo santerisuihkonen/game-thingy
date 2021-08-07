@@ -5,16 +5,17 @@
 #include "texture.h"
 
 namespace Core {
+	
 	class Shader;
 	class VertexArray;
 	class Texture;
-
+	
 	class RenderableObject {
 	public:
-		RenderableObject(Shader* shader, VertexArray* vao, Texture* textures, int vertexArrayCount);
+		RenderableObject(Shader& shader, VertexArray& vao, Texture* textures, int vertexArrayCount);
 
-		Shader* shader;
-		VertexArray* vao;
+		Shader shader;
+		VertexArray vao;
 		Texture* textures;
 		int vertexArrayCount;
 

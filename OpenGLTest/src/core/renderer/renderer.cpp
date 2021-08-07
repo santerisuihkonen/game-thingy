@@ -32,9 +32,9 @@ namespace Core
     {
         object.set();
 
-        object.shader->setUniformMat4("view", camera.getViewMatrix());
-        object.shader->setUniformMat4("model", modelMatrix);
-        object.shader->setUniformVec3("viewPos", camera.getPosition());
+        object.shader.setUniformMat4("view", camera.getViewMatrix());
+        object.shader.setUniformMat4("model", modelMatrix);
+        object.shader.setUniformVec3("viewPos", camera.getPosition());
 
         glDrawArrays(GL_TRIANGLES, 0, object.vertexArrayCount);
     }

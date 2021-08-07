@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "renderer.h"
+#include <glad/glad.h>
 
 namespace Core
 {

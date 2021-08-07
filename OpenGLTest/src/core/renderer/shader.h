@@ -1,13 +1,9 @@
 #pragma once
 
-#ifndef SHADER
-#define SHADER
-
 #include <string>
 #include <unordered_map>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
-#include "renderer.h"
 
 namespace Core
 {
@@ -41,5 +37,3 @@ namespace Core
 		int getUniformLocation(const std::string& name);
 	};
 }
-
-#endif

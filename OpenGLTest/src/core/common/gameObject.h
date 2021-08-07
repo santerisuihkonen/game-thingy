@@ -4,6 +4,7 @@
 
 #include "../renderer/renderableObject.h"
 #include "../camera.h"
+#include <memory>
 
 
 namespace Core {
@@ -26,7 +27,7 @@ namespace Core {
 
 		void render(Camera& camera);
 
-		void setRendererData(RenderableObject object);
+		void setRendererData(RenderableObject& object);
 
 		GameObject();
 		~GameObject();

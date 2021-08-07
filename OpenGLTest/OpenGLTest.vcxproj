@@ -97,6 +97,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -113,6 +114,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -129,6 +131,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,6 +148,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <ShowIncludes>true</ShowIncludes>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -161,6 +165,7 @@
     <ClCompile Include="src\core\application.cpp" />
     <ClCompile Include="src\core\camera.cpp" />
     <ClCompile Include="src\core\common\gameObject.cpp" />
+    <ClCompile Include="src\core\common\lights\directionalLight.cpp" />
     <ClCompile Include="src\core\common\primitives\cube.cpp" />
     <ClCompile Include="src\core\input.cpp" />
     <ClCompile Include="src\core\renderer\index-buffer.cpp" />
@@ -179,6 +184,7 @@
     <ClInclude Include="src\core\camera.h" />
     <ClInclude Include="src\core\common\factories\primitive-factory.h" />
     <ClInclude Include="src\core\common\gameObject.h" />
+    <ClInclude Include="src\core\common\lights\directionalLight.h" />
     <ClInclude Include="src\core\common\primitives\cube.h" />
     <ClInclude Include="src\core\common\primitives\primitive.h" />
     <ClInclude Include="src\core\enums\movement-direction.h" />

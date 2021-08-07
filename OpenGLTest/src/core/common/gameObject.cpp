@@ -1,5 +1,6 @@
 #include "gameObject.h"
 
+#include "../renderer/renderer.h"
 #include <glm/ext/matrix_transform.hpp>
 
 namespace Core
@@ -30,7 +31,7 @@ namespace Core
 		}
 	}
 
-	void GameObject::setRendererData(RenderableObject object)
+	void GameObject::setRendererData(RenderableObject& object)
 	{
 		this->_rendererData = std::make_unique<RenderableObject>(object);
 	}
